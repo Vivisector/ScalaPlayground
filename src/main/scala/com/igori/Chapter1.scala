@@ -5,8 +5,7 @@ import scala.math.BigInt._
 import scala.util.Random
 
 /**
-  * Hello world!
-  *
+  * Created by Igor Ivaniuk on 25.11.2015.
   */
 object Chapter1 extends App {
   var res: BigInt = 2;
@@ -19,24 +18,4 @@ object Chapter1 extends App {
   println(probablePrime(100, Random).toString(36))
 
   var s = new StringOps("test string")
-}
-
-/**
-  * Chapter 2
-  */
-object Chapter2 extends App {
-
-  def signum(number: Int): Int = {
-    if (number == 0)
-      0
-    else if (number > 0)
-      1
-    else
-      -1
-  }
-
-  println("Signum: 5 = " + signum(5));
-  println("Signum: 0 = " + signum(0));
-  println("Signum: -1 = " + signum(-1));
-
 }
